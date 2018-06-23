@@ -19,7 +19,7 @@
             </Grid>
         </DataTemplate>
     </Controls:MetroWindow.Resources>
-    <Grid>
+    <Grid DataContext="{Binding  MainWindowViewModel, Source={StaticResource Locator}}">
         <Grid.RowDefinitions>
             <RowDefinition Height="32"></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -29,7 +29,6 @@
             <TabControl.Resources>
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedSingleRowTabControl.xaml" />
             </TabControl.Resources>
-
         </TabControl>
     </Grid>
 </Controls:MetroWindow>
